@@ -81,7 +81,7 @@ def all_supplies_in_holidays(holiday_hash)
         # str = attribute.to_s
         # output = str.split.map { |x| x.capitalize }.join(" ")
         output = attribute.to_s.split("_").map {|i| i.capitalize}.join(" ")}
-        puts "  #{output}: " + "#{data.join(", ")}"
+        puts "  #{attribute.to_s.split("_").map {|x| x.capitalize}.join(" ")}: #{item.join(", ")}"
       end
 
   end
