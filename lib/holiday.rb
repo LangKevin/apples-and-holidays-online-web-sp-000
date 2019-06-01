@@ -79,7 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
       seasonData.each do |attribute, data|
 	      # binding.pry
         str = attribute.to_s
-        output = str.split.map { |x| x.capitalize }.join(" "))
+        output = str.split.map { |x| x.capitalize }.join(" ")
         puts "  #{output}: " + "#{data.join(", ")}"
       end
 
