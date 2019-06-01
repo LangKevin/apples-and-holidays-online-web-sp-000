@@ -91,5 +91,10 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
 # if item.include?("BBQ")
   holiday_hash.each do |key, seasonData|
+    seasonData.each do |attribute, data|
+      if data.include?("BBQ")
+        return attribute
+      end
+    end
   end
 end
