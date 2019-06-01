@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
 	      # binding.pry
         str = attribute.to_s
         str.sub!("_", " ")
-        output = (str.split.map { |x| x.capitalize }.join(" ")).sub!("_", " ")
+        output = str.split.map { |x| x.capitalize }.join(" "))
         puts "  #{output}: " + "#{data.join(", ")}"
       end
 
